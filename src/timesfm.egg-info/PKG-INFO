@@ -1,3 +1,29 @@
+Metadata-Version: 2.4
+Name: timesfm
+Version: 2.0.0
+Summary: A time series foundation model.
+Author-email: Rajat Sen <senrajat@google.com>, Yichen Zhou <yichenzhou@google.com>, Abhimanyu Das <abhidas@google.com>, Petros Mol <pmol@google.com>, Michael Chertushkin <chertushkinmichael@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: huggingface_hub[cli]>=0.23.0
+Requires-Dist: safetensors>=0.5.3
+Provides-Extra: torch
+Requires-Dist: torch>=2.0.0; extra == "torch"
+Provides-Extra: flax
+Requires-Dist: flax; extra == "flax"
+Requires-Dist: optax; extra == "flax"
+Requires-Dist: einshape; extra == "flax"
+Requires-Dist: orbax-checkpoint; extra == "flax"
+Requires-Dist: jaxtyping; extra == "flax"
+Requires-Dist: jax[cuda]; extra == "flax"
+Provides-Extra: xreg
+Requires-Dist: jax[cuda]; extra == "xreg"
+Requires-Dist: scikit-learn; extra == "xreg"
+Dynamic: license-file
+
 # TimesFM
 
 TimesFM (Time Series Foundation Model) is a pretrained time-series foundation
@@ -22,24 +48,6 @@ This open version is not an officially supported Google product.
     install timesfm==1.3.0` to install an older version of this package to load
     them.
 
----
-
-## Advanced Extension: TimesFM-X (Gen 9)
-
-**TimesFM-X** is an analytical augmentation of TimesFM that introduces **Generative Memory (GVM)** and **Holographic Hyperdimensional Computing** to achieve sub-millisecond, infinite-scale forecasting.
-
-### TimesFM-X Module Registry
-| Module | Location | Description |
-| :--- | :--- | :--- |
-| **GVM Core** | `Generative_Memory/` | High-performance C-backend for Hilbert/VRNS synthesis. |
-| **GVM Engine** | `src/timesfm/gvm_zs_engine.py` | Python bridge with Hybrid Acceleration & Vectorized Cache. |
-| **HT Transformer** | `src/timesfm/holographic_transformer.py` | 2D Spatiotemporal Interference Attention engine. |
-| **Spectral Sonar** | `src/timesfm/timesfm_x_core.py` | Koopman Lifting & Langevin Stability Gating. |
-| **Pattern Registry** | `src/timesfm/timesfm_x_core.py` | FAISS-backed manifold shunting & induction. |
-
-For more details architecture, see **[README_X.md]
-
----
 ## Update - Oct. 29, 2025
 
 Added back the covariate support through XReg for TimesFM 2.5.
