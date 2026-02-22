@@ -1,0 +1,38 @@
+{
+    "Synthetic": {
+        "Lorenz": {
+            "MSE": 59374984795.00717,
+            "Lat_Foundation": 5271.984200000588,
+            "Lat_Reflexive": 3207.1254000002227,
+            "Lat_JIT": 14.158099998894613,
+            "Speedup_Reflex": 1.6438347561963813,
+            "Speedup_JIT": 372.36523265213526
+        },
+        "Multi_Seasonal": {
+            "MSE": 60633280822.58383,
+            "Lat_Foundation": 2337.5785000025644,
+            "Lat_Reflexive": 1087.6635999993596,
+            "Lat_JIT": 963.5534000008192,
+            "Speedup_Reflex": 2.1491741564247815,
+            "Speedup_JIT": 2.425997874119459
+        }
+    },
+    "Real-World": {
+        "ETTh1.csv": {
+            "MSE": 57626109718.65831,
+            "Lat_Foundation": 2021.1081000015838,
+            "Lat_Reflexive": 883.4037000015087,
+            "Lat_JIT": 1062.706699998671,
+            "Speedup_Reflex": 2.2878646534966203,
+            "Speedup_JIT": 1.901849400219375
+        },
+        "ETTh2.csv": {
+            "MSE": 7519208400.098387,
+            "Lat_Foundation": 2089.14569999979,
+            "Lat_Reflexive": 2181.1588000018673,
+            "Lat_JIT": 12.813499997719191,
+            "Speedup_Reflex": 0.957814580028745,
+            "Speedup_JIT": 163.04254890323946
+        }
+    }
+}
