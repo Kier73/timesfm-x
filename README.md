@@ -26,7 +26,7 @@ This open version is not an officially supported Google product.
 
 ## Advanced Extension: TimesFM-X (Gen 9)
 
-**TimesFM-X** is an analytical augmentation of TimesFM that introduces **Generative Memory (GVM)** and **Holographic Hyperdimensional Computing** to achieve sub-millisecond, infinite-scale forecasting.
+**TimesFM-X** is an analytical augmentation of TimesFM that introduces **Generative Memory (GVM)** and **Holographic Hyperdimensional Computing** to that aims to achieve sub-millisecond, scale-invariant forecasting.
 
 ### TimesFM-X Module Registry
 | Module | Location | Description |
